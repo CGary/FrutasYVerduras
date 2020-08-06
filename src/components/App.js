@@ -4,13 +4,11 @@ import { GlobalStyles } from "../styles/GlobalStyles";
 
 import Home from "../pages/Home";
 
-const App = () => {
+export default function App() {
   return (
     <React.Fragment>
       <GlobalStyles />
       <Home />
     </React.Fragment>
   );
-};
-
-export default App;
+}
