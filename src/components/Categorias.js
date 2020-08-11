@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Categorias = () => {
   return (
     <Main>
       <Container>
         <Categ>Categorías</Categ>
-        <a href="#" className="categorias-row a-button">
+        <Link to="/categorias" className="categorias-row a-button">
           Frutas
-        </a>
-        <a href="#" className="categorias-row a-button">
+        </Link>
+        <Link to="/categorias" className="categorias-row a-button">
           Verduras
-        </a>
-        <a href="#" className="categorias-row a-button">
+        </Link>
+        <Link to="/categorias" className="categorias-row a-button">
           Legumbres
-        </a>
-        <a href="#" className="categorias-row a-button">
+        </Link>
+        <Link to="/categorias" className="categorias-row a-button">
           Hortalizas
-        </a>
+        </Link>
       </Container>
     </Main>
   );

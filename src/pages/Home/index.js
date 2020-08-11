@@ -3,9 +3,9 @@ import * as st from "./styles";
 import { Head } from "../../components/Head";
 import { Delivery } from "../../components/Delivery";
 import { Categorias } from "../../components/Categorias";
-import { RiHandbagLine } from "react-icons/ri";
+import { Fruta } from "./Fruta";
 
-const Home = () => {
+export default function Home() {
   return (
     <st.Main>
       <Head />
@@ -16,26 +16,12 @@ const Home = () => {
           Productos Destacados
         </st.TitleDestacado>
         {arrFrutas.map((f, i) => (
-          <st.Fruta key={"fruta-" + i}>
-            <img src={f.url} />
-            <st.Descripcion>
-              <st.TitleFruta className="negro texto-1linea">
-                {f.name}
-              </st.TitleFruta>
-              <st.Precio className="texto-1linea">{f.precio}</st.Precio>
-              <st.Car href="#" className="a-button">
-                <RiHandbagLine />
-                Al Carrito
-              </st.Car>
-            </st.Descripcion>
-          </st.Fruta>
+          <Fruta key={"fruta-" + i} {...f} />
         ))}
       </st.Contenedor>
     </st.Main>
   );
-};
-
-export default Home;
+}
 
 const arrFrutas = [
   {

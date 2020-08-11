@@ -112,7 +112,7 @@ export const TitleDestacado = styled.div`
   padding-top: var(--vl-borde-caja);
 `;
 
-export const Fruta = styled.div`
+export const Item = styled.div`
   background-color: white;
   border-radius: var(--vl-border-radius);
   padding: var(--vl-borde-caja);
