@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
+import App from "./components/App/";
 const container = document.getElementById("app");
 
 const render = () => {
@@ -10,4 +10,4 @@ const render = () => {
 render();
 
 // eslint-disable-next-line
-module.hot && module.hot.accept("./components/App", () => render());
+module.hot && module.hot.accept("./components/App/", () => render());

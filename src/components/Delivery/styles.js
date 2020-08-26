@@ -1,19 +1,6 @@
-import React from "react";
-import { GrDeliver } from "react-icons/gr";
-
-export const Delivery = () => {
-  return (
-    <Main>
-      <GrDeliver className="delivery-svg" />
-      <Title>Envíos a Domicilio</Title>
-      <Text>Cumpliendo con todas las normas de bioseguridad</Text>
-    </Main>
-  );
-};
-
 import styled from "styled-components";
 
-const Main = styled.div`
+export const Main = styled.div`
   font-size: var(--normal);
   width: calc(100vw - (2 * var(--vl-borde-ext)));
   margin: var(--vl-borde-caja) var(--vl-borde-ext);
@@ -28,11 +15,11 @@ const Main = styled.div`
   }
 `;
 
-const Title = styled.div`
+export const Title = styled.div`
   font-size: var(--title2);
   color: var(--cr-negro);
 `;
-const Text = styled.div`
+export const Text = styled.div`
   font-size: var(--chica);
   letter-spacing: var(--vl-space-chica);
 `;

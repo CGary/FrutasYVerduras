@@ -2,7 +2,7 @@ import React from "react";
 import { Item, Descripcion, TitleFruta, Precio, Car } from "./styles";
 import { RiHandbagLine } from "react-icons/ri";
 
-export const Fruta = (props) => {
+export default function Fruta  (props) {
   return (
     <Item>
       <img src={props.url} />

@@ -1,9 +1,9 @@
 import React from "react";
 import * as st from "./styles";
-import { Head } from "../../components/Head";
-import { Delivery } from "../../components/Delivery";
-import { Categorias } from "../../components/Categorias";
-import { Fruta } from "./Fruta";
+import Head from "../../components/Head/";
+import Delivery from "../../components/Delivery/";
+import Categorias from "../../components/Categorias/";
+import Fruta from "./Fruta";
 
 export default function Home() {
   return (

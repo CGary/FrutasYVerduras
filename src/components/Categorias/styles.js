@@ -1,36 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
-export const Categorias = () => {
-  return (
-    <Main>
-      <Container>
-        <Categ>Categorías</Categ>
-        <Link to="/categorias" className="categorias-row a-button">
-          Frutas
-        </Link>
-        <Link to="/categorias" className="categorias-row a-button">
-          Verduras
-        </Link>
-        <Link to="/categorias" className="categorias-row a-button">
-          Legumbres
-        </Link>
-        <Link to="/categorias" className="categorias-row a-button">
-          Hortalizas
-        </Link>
-      </Container>
-    </Main>
-  );
-};
-
 import styled from "styled-components";
 
-const Main = styled.div`
+export const Main = styled.div`
   background-color: white;
   padding: var(--vl-borde-ext);
 `;
 
-const Container = styled.div`
+export const Container = styled.div`
   border-radius: var(--vl-border-radius);
   border: solid 1px var(--cr-borde);
   display: grid;
@@ -49,7 +24,7 @@ const Container = styled.div`
   }
 `;
 
-const Categ = styled.div`
+export const Categ = styled.div`
   font-size: var(--title2);
   letter-spacing: var(--vl-space-normal);
   color: var(--cr-negro);
