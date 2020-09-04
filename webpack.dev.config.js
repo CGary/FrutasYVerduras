@@ -4,20 +4,47 @@ const webpack = require("webpack");
 
 module.exports = {
   entry: {
-    app: ["@babel/polyfill", path.resolve(__dirname, "src/index.js")],
-    modules: [
-      "react",
-      "react-dom",
-      "react-router-dom",
-      "styled-components",
-      "react-icons",
-    ],
+    //app: ["@babel/polyfill", path.resolve(__dirname, "src/index.js")],
+    app: path.resolve(__dirname, "src/index.js"),
   },
   mode: "development",
   output: {
     filename: "[name].js",
-    chunkFilename: "[id].[name].js",
+    chunkFilename: "[id].js",
     publicPath: "/",
+  },
+  optimization: {
+    namedChunks: true,
+    splitChunks: {
+      automaticNameDelimiter: ".",
+      cacheGroups: {
+        default: false,
+        vendors: false,
+        common: {
+          chunks: "all",
+          test: /[\\/]node_modules[\\/]/,
+          reuseExistingChunk: true,
+        },
+        reac1: {
+          name: "react",
+          chunks: "all",
+          test: /[\\/]node_modules[\\/](react|react-dom|react-router-dom|styled-components)[\\/]/,
+          reuseExistingChunk: true,
+        },
+        icons: {
+          name: "react-icons",
+          chunks: "all",
+          test: /[\\/]node_modules[\\/](react-icons)[\\/]/,
+          reuseExistingChunk: true,
+        },
+        others: {
+          name: "others-dep",
+          chunks: "all",
+          test: /[\\/]node_modules[\\/](babel|axios|normalize)[\\/]/,
+          reuseExistingChunk: true,
+        },
+      },
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -29,7 +56,7 @@ module.exports = {
     contentBase: path.resolve(__dirname, "dist"),
     hot: true,
     historyApiFallback: true,
-    open: true,
+    //open: true,
     port: 8080,
   },
   module: {
