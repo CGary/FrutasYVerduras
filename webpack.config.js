@@ -5,30 +5,38 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    app: ["@babel/polyfill", path.resolve(__dirname, "src/index.js")]
+    app: ["@babel/polyfill", path.resolve(__dirname, "src/index.js")],
+    //app: path.resolve(__dirname, "src/index.js"),
+    /* modules: [
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "styled-components",
+      "react-icons",
+    ], */
   },
   mode: "production",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "js/[name].[hash].js",
-    chunkFilename: "js/[id].[chunkhash].js"
+    chunkFilename: "js/[id].[chunkhash].js",
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src/index.html")
+      template: path.resolve(__dirname, "src/index.html"),
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
   ],
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: "babel-loader"
+        use: "babel-loader",
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|png|svg|jpg|gif)$/,
@@ -36,10 +44,10 @@ module.exports = {
           loader: "file-loader",
           options: {
             name: "[hash].[ext]",
-            outputPath: 'assets/',
-          }
-        }
-      }
-    ]
-  }
+            outputPath: "assets/",
+          },
+        },
+      },
+    ],
+  },
 };
