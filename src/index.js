@@ -1,10 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App/";
-const container = document.getElementById("app");
+
+const appContainer = document.getElementById("app");
 
 const render = () => {
-  ReactDOM.render(<App />, container);
+  ReactDOM.render(<App />, appContainer);
 };
 
 render();

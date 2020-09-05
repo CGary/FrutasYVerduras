@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const webpack = require("webpack");
+const Dotenv = require("dotenv-webpack");
 
 module.exports = {
   entry: {
@@ -51,6 +52,7 @@ module.exports = {
       template: path.resolve(__dirname, "src/index.html"),
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new Dotenv(),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
