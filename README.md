@@ -14,7 +14,7 @@ Instalar prettier
 Instalar EsLint
 Instalar vscode-styled-components
 Instalar Bracket Pair Colorizer
-indent-rainbow
+Instalar indent-rainbow
 En preferences de vscode poner Default Formatter: dbaeumer.vscode-eslint
 En preferences de ESLint poner EsLint:Enable en true
 
