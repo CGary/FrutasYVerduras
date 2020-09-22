@@ -25,4 +25,8 @@ Proximos tareas:
 - modelar la base de datos con firebase
 - recuperar registros de los productos de la bdd firebase
 - recuperar imagenes de firebase store
--
+
+- implementar redux desde
+https://github.com/RosoPenaranda/reactPractico/blob/master/src/index.js
+https://github.com/RodolfoSaldivar/BlogPlatzi/blob/master/src/index.js
+https://github.com/LeonidasEsteban/platzi-video-redux
