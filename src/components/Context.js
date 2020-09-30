@@ -5,7 +5,8 @@ export const StoreContext = createContext();
 export default function Provider({ children }) {
   //verifica si autenticación
   const [isAuth, setIsAuth] = useState(false);
-  //verifica si se tiene que mostrar el onboarding
+
+  const [state1, setState1] = useState(false);
 
   const store = {
     isAuth,
@@ -15,6 +16,8 @@ export default function Provider({ children }) {
     removeAuth: () => {
       setIsAuth(false);
     },
+    state1,
+    setState1,
   };
 
   return (

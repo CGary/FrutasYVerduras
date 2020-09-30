@@ -111,8 +111,9 @@ module.exports = (env, { mode }) => {
     };
 
     //rules
+    //file-loader
     rules[1].use.options.name = "[name].[hash].[ext]";
-
+    //css-loader
     rules[2].use = [
       {
         loader: MiniCssExtractPlugin.loader,

@@ -5,7 +5,8 @@ import Delivery from "../../components/Delivery/";
 import Categorias from "../../components/Categorias/";
 import Fruta from "./Fruta";
 
-export default function Home() {
+export default function Home(props) {
+  console.log("home", props);
   return (
     <st.Main>
       <Head />
