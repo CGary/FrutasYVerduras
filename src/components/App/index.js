@@ -9,7 +9,7 @@ import Login from "../../pages/Login";
 import Item from "../../pages/Item";
 
 export default function App() {
-  console.log("render App");
+  console.log("renderAppProps");
   return (
     <Suspense fallback={<div>cargando</div>}>
       <GlobalStyles />
