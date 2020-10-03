@@ -1,12 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
-import * as mapDispatchToProps from "../actions/loginActions";
+import { login } from "../actions/loginActions";
 
 const Login = (props) => {
-  console.log("renderLoginProps:", props);
+  console.log("renderLogin Props:", props);
   const handler_onClick = () => {
     const query = { user: "pepe", pass: "1234" };
-    props.login();
+    props.login(query);
   };
   return props.cargando ? (
     <div>cargando...</div>
@@ -22,4 +22,4 @@ const mapStateToProps = (reducers) => {
   return reducers.loginReducer;
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(mapStateToProps, { login })(Login);

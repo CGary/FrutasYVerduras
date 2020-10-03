@@ -1,30 +1,32 @@
-export const login = () => async (dispatch) => {
-  // dispatch({
-  //   type: "loading",
-  // });
-
-  // try {
-  // setTimeout(() => {
+export const login = (query) => async (dispatch) => {
   dispatch({
-    type: "login",
-    payload: {
-      nombre: "Pepe",
-      apellido: "Cortizona",
-    },
+    type: "loading",
   });
-  // }, 4000);
-  // } catch (error) {
-  //   console.log(error.message);
-  //   dispatch({
-  //     type: "logout",
-  //   });
-  // }
+
+  try {
+    setTimeout(() => {
+      dispatch({
+        type: "login",
+        payload: {
+          nombre: "Pepe",
+          apellido: "Cortizona",
+          ...query,
+        },
+      });
+    }, 4000);
+  } catch (error) {
+    console.log(error.message);
+    dispatch({
+      type: "logout",
+    });
+  }
 };
 
-export const login2 = (payload) => ({
-  type: "login",
-  payload: {
-    nombre: "Pepe",
-    apellido: "Cortizona",
-  },
-});
+export const cambiarNombre = (query) => async (dispatch) => {
+  setTimeout(() => {
+    dispatch({
+      type: "cambiarNombre",
+      payload: query,
+    });
+  }, 4000);
+};

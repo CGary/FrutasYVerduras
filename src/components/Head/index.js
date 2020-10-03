@@ -1,16 +1,24 @@
 import React from "react";
 import { RiMenuLine, RiShoppingCartLine, RiSearch2Line } from "react-icons/ri";
 import { Main, Anchor, Logo } from "./styles";
+import { connect } from "react-redux";
 
-export default function Head() {
+const Head = (props) => {
+  console.log("renderHead props:", props);
   return (
     <Main>
       <Anchor href="#">
         <RiMenuLine />
       </Anchor>
-      <Logo>{process.env.TITLE}</Logo>
+      <Logo>{props.nombre}</Logo>
       <RiSearch2Line />
       <RiShoppingCartLine className="head-rigth" />
     </Main>
   );
-}
+};
+
+const mapStateToProps = (reducers) => {
+  return reducers.homeReducer;
+};
+
+export default connect(mapStateToProps, null)(Head);

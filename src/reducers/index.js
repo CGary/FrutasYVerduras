@@ -1,10 +1,10 @@
 import { combineReducers } from "redux";
-const initialState = {
+const initialStateLogin = {
   isAuth: false,
   cargando: false,
   user: {},
 };
-const loginReducer = (state = initialState, action) => {
+const loginReducer = (state = initialStateLogin, action) => {
   switch (action.type) {
     case "logout":
       return {
@@ -33,6 +33,22 @@ const loginReducer = (state = initialState, action) => {
   }
 };
 
+const initialStateHome = {
+  nombre: "SOALNI Alimentos",
+};
+const homeReducer = (state = initialStateHome, action) => {
+  switch (action.type) {
+    case "cambiarNombre":
+      return {
+        ...state,
+        nombre: action.payload,
+      };
+    default:
+      return state;
+  }
+};
+
 export default combineReducers({
   loginReducer,
+  homeReducer,
 });
