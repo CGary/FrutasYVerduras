@@ -1,4 +1,4 @@
-import { combineReducers } from "redux";
+// import { combineReducers } from "redux";
 const initialStateLogin = {
   isAuth: false,
   cargando: false,
@@ -48,7 +48,14 @@ const homeReducer = (state = initialStateHome, action) => {
   }
 };
 
-export default combineReducers({
-  loginReducer,
-  homeReducer,
-});
+// export default combineReducers({
+//   loginReducer,
+//   homeReducer,
+// });
+
+export default (state = {}, action) => {
+  return {
+    loginReducer: loginReducer(state.loginReducer, action),
+    homeReducer: homeReducer(state.homeReducer, action),
+  };
+};
