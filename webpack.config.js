@@ -132,6 +132,7 @@ module.exports = (env, { mode }) => {
     ...(mode === "development" && {
       devServer: {
         hot: true,
+        historyApiFallback: true,
       },
     }),
   };

@@ -5,7 +5,6 @@ import { connect } from "react-redux";
 import { cambiarNombre } from "../../actions/loginActions";
 
 const Delivery = (props) => {
-  console.log("renderDelivery props:", props);
   return (
     <Main>
       <GrDeliver

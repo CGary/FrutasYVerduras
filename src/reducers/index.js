@@ -34,7 +34,7 @@ const loginReducer = (state = initialStateLogin, action) => {
 };
 
 const initialStateHome = {
-  nombre: "SOALNI Alimentos",
+  nombre: process.env.TITLE,
 };
 const homeReducer = (state = initialStateHome, action) => {
   switch (action.type) {

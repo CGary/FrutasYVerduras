@@ -4,7 +4,6 @@ import { Main, Anchor, Logo } from "./styles";
 import { connect } from "react-redux";
 
 const Head = (props) => {
-  console.log("renderHead props:", props);
   return (
     <Main>
       <Anchor href="#">

@@ -12,7 +12,7 @@ import Item from "../../pages/Item";
 const App = (props) => {
   console.log("renderApp props:", props);
   return (
-    <Suspense fallback={<div>cargando</div>}>
+    <Suspense fallback={<div>se esta cargando el home con React.lazy</div>}>
       <GlobalStyles />
       <BrowserRouter>
         <Switch>

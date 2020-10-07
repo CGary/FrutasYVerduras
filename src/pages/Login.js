@@ -9,7 +9,7 @@ const Login = (props) => {
     props.login(query);
   };
   return props.cargando ? (
-    <div>cargando...</div>
+    <div>Loading y cargando ...</div>
   ) : (
     <>
       <div>login</div>

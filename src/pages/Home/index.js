@@ -6,7 +6,7 @@ import Categorias from "../../components/Categorias/";
 import Fruta from "./Fruta";
 
 export default function Home(props) {
-  console.log("home", props);
+  console.log("renderHome props:", props);
   return (
     <st.Main>
       <Head />
