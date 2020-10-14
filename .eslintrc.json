@@ -13,7 +13,12 @@
   "plugins": ["react"],
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
+    "SharedArrayBuffer": "readonly",
+    "describe": true,
+    "before": true,
+    "it": true,
+    "expect": true,
+    "test": true
   },
   "parserOptions": {
     "ecmaFeatures": {
