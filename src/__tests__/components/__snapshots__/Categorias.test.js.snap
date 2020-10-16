@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Head /> otra prueba 1`] = `
+<div
+  className="sc-bdnylx dTyNcz"
+>
+  <div
+    className="sc-gtssRu efuwky"
+  >
+    <div
+      className="sc-dlnjPT eddDRN"
+    >
+      Categorías
+    </div>
+    <a
+      className="categorias-row a-button"
+      href="/categorias"
+      onClick={[Function]}
+    >
+      Frutas
+    </a>
+    <a
+      className="categorias-row a-button"
+      href="/categorias"
+      onClick={[Function]}
+    >
+      Verduras
+    </a>
+    <a
+      className="categorias-row a-button"
+      href="/categorias"
+      onClick={[Function]}
+    >
+      Legumbres
+    </a>
+    <a
+      className="categorias-row a-button"
+      href="/categorias"
+      onClick={[Function]}
+    >
+      Hortalizas
+    </a>
+  </div>
+</div>
+`;
