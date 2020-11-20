@@ -6,7 +6,6 @@ import { BrowserRouter } from "react-router-dom";
 
 // beforeEach(() => {
 // });
-
 describe("<Categoria />", () => {
   it("snapshot", () => {
     const wrapper = create(

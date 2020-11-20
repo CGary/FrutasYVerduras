@@ -2,16 +2,12 @@
   "env": {
     "browser": true,
     "es2020": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
   "globals": {
     "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly",
-    "describe": true,
-    "before": true,
-    "it": true,
-    "expect": true,
-    "test": true
+    "SharedArrayBuffer": "readonly"
   },
   "extends": [
     "eslint:recommended",
