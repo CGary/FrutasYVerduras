@@ -133,6 +133,7 @@ module.exports = (env, { mode }) => {
       devServer: {
         hot: true,
         historyApiFallback: true,
+        port: 80,
       },
     }),
   };
