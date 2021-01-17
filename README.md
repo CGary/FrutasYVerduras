@@ -32,3 +32,5 @@ Proximos tareas:
   https://github.com/LeonidasEsteban/platzi-video-redux
 
 - analizar las render props
+
+Para instalar Node.js TLS en ubuntu usar el link https://github.com/nodesource/distributions/blob/master/README.md
