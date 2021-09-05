@@ -1,3 +1,3 @@
-# FrutasYVerduras
+# Frutas Y Verduras
 
-Ventas online de frutas y verduras
+Ventas online de frutas y verduras a domilicio
