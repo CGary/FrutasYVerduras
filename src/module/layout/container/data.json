@@ -1,0 +1,481 @@
+{
+  "data": [
+    {
+      "name": "Sivimed",
+      "catalog": "810",
+      "action": "",
+      "nivel": "2",
+      "dsObservacion": "Sivimed",
+      "icInicio": false,
+      "dsIcono": "",
+      "vlPadre": "",
+      "data": [
+        {
+          "name": "GasMed",
+          "catalog": "811",
+          "action": "{'page':'pnts', 'params':{'tipo': 'gas'}}",
+          "nivel": "2",
+          "dsObservacion": "GasMed",
+          "icInicio": true,
+          "dsIcono": "GSM",
+          "vlPadre": "810",
+          "data": []
+        },
+        {
+          "name": "LiquiMed",
+          "catalog": "812",
+          "action": "{'page':'pnts', 'params':{'tipo': 'liq'}}",
+          "nivel": "2",
+          "dsObservacion": "LiquiMed",
+          "icInicio": true,
+          "dsIcono": "LIQ",
+          "vlPadre": "810",
+          "data": []
+        },
+        {
+          "name": "Sistemas de Medición PCRGD",
+          "catalog": "858",
+          "action": "{'page':'inst','params':{'cdReporte':'PM001','cdPuntoMedicion':'115','cdMimico':'2','nivel':'2'}}",
+          "nivel": "2",
+          "dsObservacion": "MJV",
+          "icInicio": true,
+          "dsIcono": "MJV",
+          "vlPadre": "810",
+          "data": []
+        }
+      ]
+    },
+    {
+      "name": "Mímicos",
+      "catalog": "813",
+      "action": "{'page':'mms', 'params':{'cdCatalogo':'813', 'titulo':'Mímicos'}}",
+      "nivel": "2",
+      "dsObservacion": "Mímicos",
+      "icInicio": true,
+      "dsIcono": "MÍM",
+      "vlPadre": "",
+      "data": [
+        {
+          "name": "Mapa General",
+          "catalog": "814",
+          "action": "{'page':'mim', 'params':{'cdMimico': '1'}}",
+          "nivel": "2",
+          "dsObservacion": "Mapa General",
+          "icInicio": false,
+          "dsIcono": "MGE",
+          "vlPadre": "813",
+          "data": []
+        },
+        {
+          "name": "Río Grande",
+          "catalog": "815",
+          "action": "{'page':'mim', 'params':{'cdMimico': '6'}}",
+          "nivel": "2",
+          "dsObservacion": "Rio Grande",
+          "icInicio": false,
+          "dsIcono": "RGD",
+          "vlPadre": "813",
+          "data": []
+        },
+        {
+          "name": "PCRGD",
+          "catalog": "847",
+          "action": "{'page':'mim', 'params':{'cdMimico': '2'}}",
+          "nivel": "2",
+          "dsObservacion": "PCRGD",
+          "icInicio": false,
+          "dsIcono": "MJV",
+          "vlPadre": "813",
+          "data": []
+        },
+        {
+          "name": "Víbora Gas Venta AND",
+          "catalog": "848",
+          "action": "{'page':'mim', 'params':{'cdMimico': '3'}}",
+          "nivel": "2",
+          "dsObservacion": "Víbora Gas Venta AND",
+          "icInicio": false,
+          "dsIcono": "VIB",
+          "vlPadre": "813",
+          "data": []
+        },
+        {
+          "name": "Sirari Gas Venta AND",
+          "catalog": "849",
+          "action": "{'page':'mim', 'params':{'cdMimico': '4'}}",
+          "nivel": "2",
+          "dsObservacion": "Sirari Gas Venta AND",
+          "icInicio": false,
+          "dsIcono": "SIR",
+          "vlPadre": "813",
+          "data": []
+        },
+        {
+          "name": "Yapacaní Gas Venta AND",
+          "catalog": "850",
+          "action": "{'page':'mim', 'params':{'cdMimico': '5'}}",
+          "nivel": "2",
+          "dsObservacion": "Yapacaní Gas Venta AND",
+          "icInicio": false,
+          "dsIcono": "YAP",
+          "vlPadre": "813",
+          "data": []
+        },
+        {
+          "name": "Víbora Gas Venta TRS",
+          "catalog": "851",
+          "action": "{'page':'mim', 'params':{'cdMimico': '7'}}",
+          "nivel": "2",
+          "dsObservacion": "Víbora Gas Venta TRS",
+          "icInicio": false,
+          "dsIcono": "VIT",
+          "vlPadre": "813",
+          "data": []
+        },
+        {
+          "name": "Sirari Gas Venta TRS",
+          "catalog": "852",
+          "action": "{'page':'mim', 'params':{'cdMimico': '8'}}",
+          "nivel": "2",
+          "dsObservacion": "Sirari Gas Venta TRS",
+          "icInicio": false,
+          "dsIcono": "SIT",
+          "vlPadre": "813",
+          "data": []
+        },
+        {
+          "name": "Yapacaní Gas Venta TRS",
+          "catalog": "853",
+          "action": "{'page':'mim', 'params':{'cdMimico': '9'}}",
+          "nivel": "2",
+          "dsObservacion": "Yapacaní Gas Venta TRS",
+          "icInicio": false,
+          "dsIcono": "YAT",
+          "vlPadre": "813",
+          "data": []
+        }
+      ]
+    },
+    {
+      "name": "Diagnóstico Medidores Ultrasónicos",
+      "catalog": "816",
+      "action": "{'page':'ult', 'params':{}}",
+      "nivel": "2",
+      "dsObservacion": "Diagnóstico Medidores Ultrasónicos",
+      "icInicio": true,
+      "dsIcono": "DMU",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "Cumplimiento de Nominación",
+      "catalog": "817",
+      "action": "{'page':'cunom', 'params':{}}",
+      "nivel": "1",
+      "dsObservacion": "Se visualizan los distintos cumplimiento de nominación",
+      "icInicio": true,
+      "dsIcono": "CUM",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "Gas no Contabilizado",
+      "catalog": "818",
+      "action": "{'page':'pgnc', 'params':{}}",
+      "nivel": "2",
+      "dsObservacion": "Gas no Contabilizado",
+      "icInicio": true,
+      "dsIcono": "GNC",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "Control de Calidad Gas Natural",
+      "catalog": "820",
+      "action": "{'page':'cgnmain', 'params':{}}",
+      "nivel": "2",
+      "dsObservacion": "Control de Calidad de Gas Natural",
+      "icInicio": true,
+      "dsIcono": "CGN",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "Telesupervisión",
+      "catalog": "821",
+      "action": "{'page':'teln', 'params':{}}",
+      "nivel": "2",
+      "dsObservacion": "Telesupervisión",
+      "icInicio": true,
+      "dsIcono": "TEL",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "Control de Cromatógrafos",
+      "catalog": "823",
+      "action": "{'page':'crom', 'params':{}}",
+      "nivel": "2",
+      "dsObservacion": "Control de Cromatógrafos",
+      "icInicio": true,
+      "dsIcono": "CDC",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "Mapas",
+      "catalog": "824",
+      "action": "{'page':'mms', 'params':{'cdCatalogo':'824', 'titulo':'Mapas'}}",
+      "nivel": "2",
+      "dsObservacion": "Mapas",
+      "icInicio": true,
+      "dsIcono": "MAP",
+      "vlPadre": "",
+      "data": [
+        {
+          "name": "Norte GCY-GYC-GCC",
+          "catalog": "825",
+          "action": "{'page':'mim', 'params':{'cdMimico': '10'}}",
+          "nivel": "2",
+          "dsObservacion": "Gasoductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "Norte Sur YABOG-GASYRG",
+          "catalog": "826",
+          "action": "{'page':'mim', 'params':{'cdMimico': '11'}}",
+          "nivel": "2",
+          "dsObservacion": "Gasoductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "Occidente GAA",
+          "catalog": "827",
+          "action": "{'page':'mim', 'params':{'cdMimico': '12'}}",
+          "nivel": "2",
+          "dsObservacion": "Gasoductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "Sur GTC",
+          "catalog": "828",
+          "action": "{'page':'mim', 'params':{'cdMimico': '13'}}",
+          "nivel": "2",
+          "dsObservacion": "Gasoductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "Sur GVT",
+          "catalog": "829",
+          "action": "{'page':'mim', 'params':{'cdMimico': '14'}}",
+          "nivel": "2",
+          "dsObservacion": "Gasoductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "OCY",
+          "catalog": "830",
+          "action": "{'page':'mim', 'params':{'cdMimico': '15'}}",
+          "nivel": "2",
+          "dsObservacion": "Oleoductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "OCSC-ONSZ-OSCR-OCC",
+          "catalog": "831",
+          "action": "{'page':'mim', 'params':{'cdMimico': '16'}}",
+          "nivel": "2",
+          "dsObservacion": "Oleoductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "OCY-OCCH-OCSZ2",
+          "catalog": "832",
+          "action": "{'page':'mim', 'params':{'cdMimico': '17'}}",
+          "nivel": "2",
+          "dsObservacion": "Oleoductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "OSSA I-OSSA II ",
+          "catalog": "833",
+          "action": "{'page':'mim', 'params':{'cdMimico': '18'}}",
+          "nivel": "2",
+          "dsObservacion": "Oleoductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "PCOLP-PCPV",
+          "catalog": "834",
+          "action": "{'page':'mim', 'params':{'cdMimico': '19'}}",
+          "nivel": "2",
+          "dsObservacion": "Poliductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "PCSZ-PCS-PSP",
+          "catalog": "835",
+          "action": "{'page':'mim', 'params':{'cdMimico': '20'}}",
+          "nivel": "2",
+          "dsObservacion": "Poliductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        },
+        {
+          "name": "PVT",
+          "catalog": "836",
+          "action": "{'page':'mim', 'params':{'cdMimico': '21'}}",
+          "nivel": "2",
+          "dsObservacion": "Poliductos",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "824",
+          "data": []
+        }
+      ]
+    },
+    {
+      "name": "DSPA Reportes",
+      "catalog": "838",
+      "action": "{'page': 'url', 'url': ' http://yaocasdspmp1:81/'}",
+      "nivel": "2",
+      "dsObservacion": "DSPA Reportes",
+      "icInicio": true,
+      "dsIcono": "DRE",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "DSPA Dashboard",
+      "catalog": "839",
+      "action": "{'page': 'url', 'url': ' http://yaocasdspmp1:82/Modules/FieldIndicators/FieldIndicators.aspx'}",
+      "nivel": "2",
+      "dsObservacion": "DSPA Dashboard",
+      "icInicio": true,
+      "dsIcono": "DDA",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "SMP Dashboard",
+      "catalog": "840",
+      "action": "{'page':'dash', 'params':{}}",
+      "nivel": "2",
+      "dsObservacion": "SMP Dashboard",
+      "icInicio": true,
+      "dsIcono": "SDA",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "Reporte de Alarmas",
+      "catalog": "841",
+      "action": "{'page':'alr', 'params':{'cdPuntoMedicion': '0'}}",
+      "nivel": "2",
+      "dsObservacion": "Reportes de las Alarmas",
+      "icInicio": false,
+      "dsIcono": "ALR",
+      "vlPadre": "",
+      "data": []
+    },
+    {
+      "name": "Herramientas",
+      "catalog": "842",
+      "action": "",
+      "nivel": "2",
+      "dsObservacion": "Herramientas del sistema",
+      "icInicio": false,
+      "dsIcono": "",
+      "vlPadre": "",
+      "data": [
+        {
+          "name": "Adm. Alarmas",
+          "catalog": "843",
+          "action": "{'page':'admalr', 'params':{}}",
+          "nivel": "2",
+          "dsObservacion": "Administración de alarmas",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "842",
+          "data": []
+        },
+        {
+          "name": "Adm. Tipos Alarma",
+          "catalog": "844",
+          "action": "{'page':'conf', 'params':{}}",
+          "nivel": "2",
+          "dsObservacion": "Administración de tipos de alarmas",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "842",
+          "data": []
+        },
+        {
+          "name": "Editables Diarios",
+          "catalog": "845",
+          "action": "{'page':'ved', 'params':{'editable': 'd'}}",
+          "nivel": "2",
+          "dsObservacion": "Valores Editables Diarios",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "842",
+          "data": []
+        },
+        {
+          "name": "Editables Horarios",
+          "catalog": "846",
+          "action": "{'page':'ved', 'params':{'editable': 'h'}}",
+          "nivel": "2",
+          "dsObservacion": "Valores Editables Horarios",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "842",
+          "data": []
+        },
+        {
+          "name": "Adm. Usuarios",
+          "catalog": "856",
+          "action": "{'page':'usr', 'params':{}}",
+          "nivel": "2",
+          "dsObservacion": "Administración de usuarios",
+          "icInicio": false,
+          "dsIcono": "",
+          "vlPadre": "842",
+          "data": []
+        }
+      ]
+    }
+  ]
+}
